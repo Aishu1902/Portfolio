@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proj1</title>
+    <link rel="stylesheet" href="index3.css">
+
+</head>
+<body>
+    <h1  class="title"><marquee class="sliding">A Robust Cyber attack Detection Model: A Big Data Perspective</marquee></h1>
+    <!-- INTRODUCTION -->
+    <div class="newbox">
+        <div class="intro1">
+            <h2 >INTRODUCTION:</h2> 
+            <p>Detecting cyber-attacks has become a critical priority in the quickly changing world of cyber security and big data analytics. With the exponential expansion of data and the sophistication of cyber-attacks, traditional protection techniques are becoming ineffective.
+                To overcome the challenges in cyber security and big data analytics, we introduce a model called hybrid classification models with tuned weights that combine multiple algorithms to improve detection accuracy and mitigate cyber threats effectively. Algorithms used are LSTM (Long Short Term Memory) and DMO (Deep Max Out).</p>
+                <p>Feature selection is critical for increasing the performance of machine learning models by finding the most important characteristics that contribute to the model's predictive capacity. We use ICA (Independent Component Analysis) for feature selection. To increase machine learning model performance and detection accuracy, optimize model parameters, tune weights, and use optimization techniques like Sea Gull Optimization (SE-SGO).
+                By adopting these strategies and leveraging the collective expertise of the cybersecurity and data analytics communities, we can strengthen our defences, improve threat detection capabilities, and build resilient systems to protect critical information assets from evolving cyber threats.</p>
+        </div>
+        <div class="ddos"></div>
+    </div>
+    <!-- explanation -->
+     <div class="explain">
+        <div class="pre">
+            <h2>PRE-PROCESSING:</h2>
+            <ul>
+            <li>Cleaning, converting, and organizing raw data is known as preprocessing, and it is an essential stage in data analysis and machine learning.</li>
+            <li>The goal of data preprocessing is to improve the quality of the data and to make it more suitable for the specific data mining task.</li>
+            <li>In preprocessing, we first normalized the data to ensure uniform scales across features.</li>
+            <li>In order to ensure that all features have a similar scale and avoid larger-scale variables dominating smaller-scale variables during analysis or model training, normalization is an essential preprocessing step.</li>
+            <li>We have used min-max scaler for normalization.</li>
+            <li>Removal of null values to enhance data integrity and prepare it for further analysis.</li>
+            <li>These steps collectively prepare the data for robust analysis and model building.</li> 
+            </ul>
+        </div>
+        <br>
+        <div class="ica">
+            <h2>INDEPENDENT COMPONENT ANALYSIS(ICA):</h2>
+            <ul>
+            <li>Independent components analysis (ICA) is used to take a large data set consisting of many variables and reduce it into smaller number dimensions</li>
+           <li>ICA is a computational method for separating a multivariate signal into its underlying components.</li> 
+           <li>Using ICA, we can extract the desired component from the amalgamation of multiple signals.</li>
+           <h3>Steps involved in performing ICA are:</h3>
+        </ul>
+        
+        <ol>
+                 <li>Centre the noticed signal by deducting the mean</li>
+                 <li>Whiten the noticed signal y</li>
+                 <li>Compute the novel value for whitened signal w </li>
+                 <li>Normalize w</li>
+                 <li>Compute the Jaccard coefficient that is measured to find the similarity among samples</li> 
+                 <li>Ensure that the algorithm has converged and if it has not returned to step 4 </li>
+                 <li>Take the dot product of w and y obtain an independent signal source (S)</li> 
+            </ol>
+        </div>
+    </br>
+        <div class="pre">
+            <h2>LONG TERM SHORT MEMORY(LSTM):</h2>
+            <ul>
+            <li>It is used in the field of Deep Learning.</li>
+            <li>It is a variety of Recurrent Neural Networks (RNN) that are capable of learning     long-term dependencies .</li>
+            <li>LSTMs are able to process and analyze sequential data, such as time series, text, and speech. </li>
+            <li>They use a memory cell and gates to control the flow of information, allowing them to selectively retain or discard information as needed and thus avoid the vanishing gradient problem that plagues traditional RNNs.</li>
+            </ul>
+        </div>
+    </br>
+    <div class="pre">
+        <h2>DEEP MAX OUT(DMO):</h2>
+        <ul>
+        <li>DMO describes a neural network layer where the function chooses the maximum value from a set of input.</li>
+        <li>To increase the overall performance, the DMO layer is integrated into the model.</li>
+        <li>The final detection is obtained by averaging the outputs of the DMO layer and LSTM. </li>
+        <li>They use a memory cell and gates to control the flow of information, allowing them to selectively retain or discard information as needed and thus avoid the vanishing gradient problem that plagues traditional RNNs.</li>
+        </ul>
+    </div>
+    <br>
+        <div class="ica">
+            <h2>SEAGULL OPTIMIZATION:</h2>
+            <ul>
+            <li>Optimization refers to getting the best solution out of all feasible solutions.</li>
+           <li>Inspired by the foraging behavior of seagulls, the seagull optimization algorithm (SOA) is a newly suggested meta-heuristic optimization algorithm.</li> 
+           <li>SOA aims to efficiently explore the solution space and converge to high-quality solutions by leveraging both individual and collective behaviors of the seagulls.</li>
+           <h3>Conditions:</h3>
+        </ul>
+        
+        <ol>
+                 <li>Avoiding the collisions</li>
+                 <li>Movement towards the best directions</li>
+                 <li>Compute the novel value for whitened signal w </li>
+                 <li>Remain close to the best search agent</li>
+                 
+            </ol>
+            <ul>
+                <li>Overall, the Seagull Optimization Algorithm aims to efficiently explore the solution space, strike a balance between exploration and exploitation, and converge to high-quality solutions for optimization problems</li>
+            </ul>
+        </div>
+     </div>
+     <!-- output -->
+      <div class="output">
+        <div class="o1 out"></div>
+        <div class="o2 out"></div>
+        <div class="o3 out"></div>
+        <div class="o4 out"></div>
+        <div class="o5 out"></div>
+
+      </div>
+</body>
+</html>
